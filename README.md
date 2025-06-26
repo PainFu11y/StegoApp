@@ -1,5 +1,4 @@
-```StegoApp
-```
+
 StegoApp is a JavaFX application for image steganography using the Least Significant Bit (LSB) method. It allows users to hide and extract text messages within image files.
 
 Features
