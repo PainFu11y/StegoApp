@@ -73,7 +73,7 @@ public class StegoApp extends Application {
             File output = fileChooser.showSaveDialog(stage);
             if (output != null) {
                 try {
-                    LSBEncoder.encode(selectedImage.getAbsolutePath(), output.getAbsolutePath(), messageArea.getText());
+                    LSBEncoder.encode(selectedImage.getAbsolutePath(), output.getAbsolutePath(), messageArea.getText(), 1234L);
                     statusLabel.setText(" Message successfully encoded into image.");
                 } catch (IOException ex) {
                     statusLabel.setText(" Error: " + ex.getMessage());
