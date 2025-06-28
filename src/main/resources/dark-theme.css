@@ -1,8 +1,8 @@
 /* dark-theme.css */
 .root {
-    -fx-background-color: #121212; /* очень тёмный фон */
+    -fx-background-color: #121212;
     -fx-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    -fx-text-fill: #EEEEEE; /* светлый цвет текста */
+    -fx-text-fill: #EEEEEE;
 }
 
 .label, .text-area, .button, .text-field {
@@ -20,12 +20,12 @@
 }
 
 .button:hover {
-    -fx-background-color: #1565C0; /* чуть темнее при наведении */
+    -fx-background-color: #1565C0;
 }
 
 /* TextArea */
 .text-area {
-    -fx-control-inner-background: #222222; /* тёмный фон для текстового поля */
+    -fx-control-inner-background: #222222;
     -fx-background-insets: 0;
     -fx-background-radius: 5;
 }
@@ -34,6 +34,12 @@
 .label {
     -fx-font-size: 14px;
 }
+
+.label.error {
+    -fx-text-fill: #FF5555; /* ярко-красный */
+    -fx-font-weight: bold;
+}
+
 
 /* ImageView */
 .image-view {

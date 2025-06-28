@@ -34,16 +34,4 @@ jlink {
         name = 'StegoApp'
     }
 
-    jpackage {
-        imageName = 'StegoApp'
-        installerType = 'exe'
-        appVersion = '1.0'
-        icon = 'src/main/resources/stego-icon.ico'
-        mainClass = 'org.platform.StegoApp'
-
-        installerOptions = [
-                '--win-shortcut',
-                '--win-dir-chooser'
-        ]
-    }
 }

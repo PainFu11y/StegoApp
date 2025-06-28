@@ -1,5 +1,7 @@
 package org.platform;
 
+import org.platform.exception.MessageTooLargeException;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -11,7 +13,8 @@ import java.util.List;
 
 public class LSBEncoder {
 
-    public static void encode(String inputImagePath, String outputImagePath, String message, long seed) throws IOException {
+    public static void encode(String inputImagePath, String outputImagePath, String message, long seed)
+            throws IOException, MessageTooLargeException {
         BufferedImage original = ImageIO.read(new File(inputImagePath));
 
         BufferedImage image = new BufferedImage(
@@ -49,9 +52,9 @@ public class LSBEncoder {
         System.arraycopy(lengthBytes, 0, metaData, 0, 4);
         System.arraycopy(seedBytes, 0, metaData, 4, 8);
 
-        int capacity = image.getWidth() * image.getHeight() * 3;
-        if ((metaData.length + messageBytes.length) * 8 > capacity) {
-            throw new IllegalArgumentException("Message is too long to encode in this image.");
+
+        if (!canEncode(original, message)) {
+            throw new MessageTooLargeException("Message is too long to encode in this image.");
         }
 
 
@@ -116,6 +119,12 @@ public class LSBEncoder {
 
 
         ImageIO.write(image, "png", new File(outputImagePath));
+    }
+
+    public static boolean canEncode(BufferedImage image, String message) {
+        int capacityBits = image.getWidth() * image.getHeight() * 3;
+        int requiredBits = (12 + message.getBytes(StandardCharsets.UTF_8).length) * 8;
+        return requiredBits <= capacityBits;
     }
 
     private static int getBit(byte[] data, int bitIndex) {
