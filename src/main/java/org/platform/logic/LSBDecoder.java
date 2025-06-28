@@ -1,4 +1,4 @@
-package org.platform;
+package org.platform.logic;
 import javax.imageio.ImageIO;
 import java.awt.Point;
 import java.awt.image.BufferedImage;

@@ -1,4 +1,4 @@
-package org.platform;
+package org.platform.logic;
 
 import java.awt.image.BufferedImage;
 

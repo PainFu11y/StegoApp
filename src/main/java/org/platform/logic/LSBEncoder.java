@@ -1,4 +1,4 @@
-package org.platform;
+package org.platform.logic;
 
 import org.platform.exception.MessageTooLargeException;
 

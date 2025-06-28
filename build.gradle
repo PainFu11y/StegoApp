@@ -18,7 +18,7 @@ dependencies {
 
 application {
     mainModule = 'stego.app'
-    mainClass = 'org.platform.StegoApp'
+    mainClass = 'org.platform.app.StegoApp'
 }
 
 javafx {

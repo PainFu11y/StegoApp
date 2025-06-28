@@ -1,4 +1,4 @@
-package org.platform.error;
+package org.platform.ui.feedback;
 
 import javafx.animation.FadeTransition;
 import javafx.animation.ParallelTransition;
@@ -6,7 +6,7 @@ import javafx.animation.TranslateTransition;
 import javafx.scene.control.Label;
 import javafx.util.Duration;
 
-import static org.platform.error.ErrorSound.playErrorSound;
+import static org.platform.ui.feedback.ErrorSound.playErrorSound;
 
 public class ErrorAnimator {
     public static void addErrorStatusStyle(Label label){
