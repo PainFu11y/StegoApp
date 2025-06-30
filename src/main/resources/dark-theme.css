@@ -1,0 +1,47 @@
+/* dark-theme.css */
+.root {
+    -fx-background-color: #121212;
+    -fx-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    -fx-text-fill: #EEEEEE;
+}
+
+.label, .text-area, .button, .text-field {
+    -fx-text-fill: #EEEEEE;
+}
+
+/* Кнопки */
+.button {
+    -fx-background-color: #1E88E5; /* приятный синий */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 15 8 15;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #1565C0;
+}
+
+/* TextArea */
+.text-area {
+    -fx-control-inner-background: #222222;
+    -fx-background-insets: 0;
+    -fx-background-radius: 5;
+}
+
+/* Label для статуса */
+.label {
+    -fx-font-size: 14px;
+}
+
+.label.error {
+    -fx-text-fill: #FF5555; /* ярко-красный */
+    -fx-font-weight: bold;
+}
+
+
+/* ImageView */
+.image-view {
+    -fx-effect: dropshadow(gaussian, black, 10, 0.5, 0, 0);
+}
