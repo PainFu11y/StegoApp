@@ -51,5 +51,5 @@ Executable application
 
 All required dependencies
 
-A minimal embedded JRE tailored for this app
+A minimal embedded JRE tailored for this app.
 
