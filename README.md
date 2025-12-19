@@ -1,6 +1,10 @@
-# 🖼️ StegoApp — JavaFX LSB Steganography Tool
+# StegoApp — JavaFX LSB Steganography Tool
 
 **StegoApp** is a desktop JavaFX application for hiding and extracting text messages within images using the LSB (Least Significant Bit) steganography technique. It features a modern user interface with zooming, dark mode, and the ability to visually compare images.
+
+
+---
+<img src="icon.ico" height="100px">
 
 
 ## 🔧 Features
