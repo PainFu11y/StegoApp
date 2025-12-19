@@ -1,8 +1,8 @@
 $WScriptShell = New-Object -ComObject WScript.Shell
 
-# Путь к .exe
+# path to .exe
 $exePath = Join-Path -Path $PSScriptRoot -ChildPath "build\launch4j\StegoApp.exe"
-$iconPath = Join-Path -Path $PSScriptRoot -ChildPath "src\main\resources\stego-icon.ico"
+$iconPath = Join-Path -Path $PSScriptRoot -ChildPath "src\main\resources\icon.ico"
 
 Write-Host "EXE: $exePath"
 Write-Host "ICON: $iconPath"
@@ -16,7 +16,7 @@ if (-Not (Test-Path $iconPath)) {
     exit
 }
 
-# Ярлык создаем в текущей папке
+# creating a shortcut at the current time
 $shortcutPath = Join-Path $PSScriptRoot "StegoApp.lnk"
 Write-Host "Создаем ярлык по пути: $shortcutPath"
 
