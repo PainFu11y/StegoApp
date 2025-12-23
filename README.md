@@ -8,23 +8,21 @@
 <img src="icon.ico" height="100px">
 
 
-## 🔧 Features
+##  Features
 
-- 📥 Load images (via file chooser or drag & drop)
-- 🔐 Encode text into an image using LSB
-- 🔓 Decode hidden text from an image
-- 🔄 Toggle between:
+-  Load images (via file chooser or drag & drop)
+-  Encode text into an image using LSB
+-  Decode hidden text from an image
+-  Toggle between:
     - Original image
     - Encoded image
     - Difference view (visual comparison)
-- 🔍 Zoom in and out
-- 🌙 Light/Dark theme toggle
-- ⚠️ Error handling (e.g., `MessageTooLargeException`)
-- 📦 Windows MSI installer built with `jlink` + `jpackage` (bundled runtime, no separate JRE required)
+-  Zoom in and out
+-  Windows MSI installer built with `jlink` + `jpackage` (bundled runtime, no separate JRE required)
 
 ---
 
-## 🚀 Technologies Used
+##  Technologies Used
 
 - **Java 17+**
 - **JavaFX**
@@ -33,7 +31,7 @@
 
 ---
 
-## ▶️ How to Run
+##  How to Run
 
 ### With Gradle:
 
@@ -60,7 +58,7 @@ All required dependencies
 A minimal embedded JRE tailored for this app.
 
 
-### 🔄 Difference View
+### Difference View
 
 <table>
   <tr>
