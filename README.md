@@ -39,7 +39,7 @@
 ./gradlew run
 ```
 
-### 🛠️ Build Standalone Application
+### Build Standalone Application
 To generate a fully self-contained build with a custom Java Runtime (no need to install Java separately):
 
 ```
